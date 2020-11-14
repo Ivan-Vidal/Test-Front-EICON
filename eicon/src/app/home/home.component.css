@@ -1,0 +1,36 @@
+.container{
+    width: 100vw;
+}
+.input-group{
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-top: 40px;
+}
+
+.input-group:focus-within{
+    border: 1px solid #0a316b;
+}
+.form-control{
+    border-radius: 20px;
+    height: 48px;
+    border: none;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+.btn{
+    border: none;
+    border-radius: 20px;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.lupa{
+    transition: .1s ease-in;
+}
+.lupa:hover{
+    margin-top: -10px;
+}
+
+
