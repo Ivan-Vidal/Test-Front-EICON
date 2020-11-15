@@ -1,16 +1,88 @@
 <div class="container">
+    <div class="topo">
+        <img class="logo" src="../../assets/img/cinema.svg" alt="">
+    <h1 class="titulo"><img src="http://www.eicon.com.br/images/logo_eicon.png" alt=""> <br><i>MOVIES</i></h1></div>
+<div class="input">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Encontre o filme pelo nome">
             <div class="input-group-append">
               <button class="btn" type="button" >
-                  <img src="../../assets/img/search.svg" class="lupa" alt="Buscar">
+                  <img src="../../assets/img/lupa.svg" class="lupa" alt="Buscar">
                  </button>
             </div>
           </div>
-          <hr>
+        </div>
+          <hr class="risco">
         <div class="catalogo">
-            <ul>
-                <li>Filme 1</li>
+            <ul class="list-film row">
+                <div class="film">
+
+                    <li> 
+                        <div class="card">
+                            <div class="card-img">
+                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="nome do filme">
+                    </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Titulo do filme</h5>
+                          <a routerLink="/details" class="btn btn-primary"> Detalhes</a>
+                        </div>
+                      </div>
+                    </li>
+                </div>
+                <div class="film">
+
+                    <li> 
+                        <div class="card">
+                            <div class="card-img">
+                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="nome do filme">
+                    </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Titulo do filme</h5>
+                          <a href="#" class="btn btn-primary"> Detalhes</a>
+                        </div>
+                      </div>
+                    </li>
+                </div>    <div class="film">
+
+                    <li> 
+                        <div class="card">
+                            <div class="card-img">
+                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="nome do filme">
+                    </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Titulo do filme</h5>
+                          <a href="#" class="btn btn-primary"> Detalhes</a>
+                        </div>
+                      </div>
+                    </li>
+                </div> <div class="film">
+
+                    <li> 
+                        <div class="card">
+                            <div class="card-img">
+                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="nome do filme">
+                    </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Titulo do filme</h5>
+                          <a href="#" class="btn btn-primary"> Detalhes</a>
+                        </div>
+                      </div>
+                    </li>
+                </div>
+
             </ul>
           </div>
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Proximo</a>
+              </li>
+            </ul>
+          </nav>
 </div>

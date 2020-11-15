@@ -1,10 +1,26 @@
 .container{
     width: 100vw;
+    text-align: center;
 }
+.logo{
+    width: 50px;
+    height: 90px;
+    margin-top: 30px;
+}
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -20px;
+    color: #0a316b;    
+    margin-bottom: 30px;
+}
+
 .input-group{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, .2);
-    margin-top: 40px;
+    margin-top: 70px;
+}
+.risco{
+    margin-top: 50px;
 }
 
 .input-group:focus-within{
@@ -26,11 +42,83 @@
 .btn:focus{
     box-shadow: none;
 }
+.btn-primary{
+  background: #FF0000;
+  transition: ease-in .3s;
+}
+.btn-primary:hover{
+    background: #883838;
+}
 .lupa{
     transition: .1s ease-in;
+    width: 30px;
+    
 }
 .lupa:hover{
     margin-top: -10px;
 }
+.catalogo{
+    align-items: center;
+    text-align: center;
+}
+.list-film{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.film{
+    border-radius: 20px;
+    list-style: none;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    transition: ease-in 0.2s;
+}
+.film:hover{
+    box-shadow: 6px 6px 50px 6px rgba(0, 0, 0, 0.4);
+}
+.card-img{
+   
+    height: 400px;
+}
+.card img{
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    border-radius: 20px;
+}
+.card-body{
+    padding: 0.5rem;
+}
+.page-item{
+    box-shadow: 2px 2px 8px 2px  rgba(0, 0, 0, 0.3);
+}
+.page-link{
+    color:  #0a316b;
+}
+.page-link:hover{
+    opacity: 0.7;
+}
+.card-title{
+    color:  #0a316b;
+}
 
+@media(min-width:500px){
+    .film{
+        width: 330px;
+        margin-left: 40px;
+    }
+    .list-film{
+        padding: 0px;
+    }
+  
+}
 
+@media(min-width:992px){
+    .input{
+        padding-left: 15rem;
+        padding-right: 15rem;
+         align-items: center;
+     }
+}
