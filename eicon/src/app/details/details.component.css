@@ -13,12 +13,21 @@
     text-align: center;
     margin-top: 7px;
 }
+h5{
+    color:  #0a316b;
+    margin-top: 7px;
+}
+.dados{
+    color:#000000;
+}
 .descri{
  color:  #0a316b;
  text-align: justify;
  padding-left: 5px;
  padding-right: 5px;
-
+}
+.descri p{
+    color:#000000;
 }
 .footer{
     text-align: center;
@@ -48,6 +57,10 @@
        width: 400px;
        margin-top: 150px;
        text-align:left ;
+    }
+    .dados{
+        margin-top: 90px;
+        
     }
 
 }

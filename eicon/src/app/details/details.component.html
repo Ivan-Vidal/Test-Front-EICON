@@ -1,15 +1,26 @@
 <div class="container">
     <div class="topo">
     <div class="poster">
-        <img class="poster-img" src="https://source.unsplash.com/random" alt="titulo do filme">
+        <img class="poster-img" src="https://image.tmdb.org/t/p/original/{{detail.poster_path}}" alt="{{detail.name}}">
     </div>
-    <h3>Titulo do filme</h3>
+    <h3>{{detail.title}}</h3>
 </div>
     <hr class="risco">
-
-<div class="descri ">
+<div class="dados">
+    <h5>Titulo original</h5>
+    <p>{{detail.original_title}}</p>
+    <h5>Idioma original</h5>
+    <p>{{detail.original_language}}</p> 
+    <h5>Nota</h5>
+    <p>{{detail.vote_average}}</p>
+    <h5>Data de lançamento</h5>
+    <p>{{detail.release_date}}</p>
+    <h5>Duração</h5>
+    <p>{{detail.runtime}} Minutos</p>
+</div>
+<div class="descri">
     <h5>Descrição</h5>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit placeat, numquam ex recusandae alias autem quos illum harum cum, laborum quia dolore. Explicabo fugit sunt vero debitis dolorem nam et!</p>
+    <p>{{detail.overview}}</p>
 
 <div class="footer">
     <button routerLink="/home" class="btn btn-danger">Voltar</button>
