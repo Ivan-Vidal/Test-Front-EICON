@@ -42,6 +42,15 @@ The goal of the challenge is to develop an application that makes it possible to
 
 - Used the concept of Mobile First (for responsiveness). 
 
+## Requirements
+- Node JS.
+
+- Angular-CLI.
+
+- NPM.
+
+- Git.
+
 ## First step clone repository
 Come this [way](https://github.com/Ivan-Vidal/Test-Front-EICON)
 
