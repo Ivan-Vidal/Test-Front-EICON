@@ -9,38 +9,28 @@ The goal of the challenge is to develop an application that makes it possible to
 
 ***Desktop***
 
- <img src="eicon/src/assets/img/video_para-git.gif"> 
+ <img src="eicon/src/assets/img/eicon-test.gif"> 
 
 
-
-
-
-
-***Mobile*** <br><br><br><br>
- *login-mobile*
-<div>
-  <img src="coobrastur/src/assets/img/login-mobile.png" style="width:100px;"> 
-  </div>
  
- 
+***Mobile*** 
+
+
+
    *Home-mobile*
- <div>
- <img src="coobrastur/src/assets/img/home-mobile.png" style="width:100px;">
-<img src="coobrastur/src/assets/img/home-mobile-footer.png" style="width:100px;">
-</div>
 
-*Register-mobile*
- <div>
- <img src="coobrastur/src/assets/img/register-mobile.png" style="width:100px;">
- </div>
+ <img src="eicon/src/assets/img/home-mobile.png" style="width:100px;">
  
-*Edit-mobile*
- <div>
- <img src="coobrastur/src/assets/img/edit-mobile.png" style="width:100px;">
-</div>
+ 
+   *Details-mobile*
+ 
+ <img src="eicon/src/assets/img/details-mobile.png" style="width:100px;">
+
+
 
 
 ## Technologies Used
+- used to populate the screen a Rest API from [TMDB](https://www.themoviedb.org/documentation/api) indicated by [EICON](http://www.eicon.com.br).
 
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
@@ -52,12 +42,16 @@ The goal of the challenge is to develop an application that makes it possible to
 
 - Used the concept of Mobile First (for responsiveness). 
 
-## Firt step Install dependencies
+## First step clone repository
+Come this [way](https://github.com/Ivan-Vidal/Test-Front-EICON)
+
+
+## Second step Install dependencies
 
 Run `npm install` for install al dependencies of project.
 
 
-## Second step Development server
+## third step Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
