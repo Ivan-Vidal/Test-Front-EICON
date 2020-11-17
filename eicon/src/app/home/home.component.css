@@ -46,8 +46,8 @@
     box-shadow: none;
 }
 .btn-primary{
-  background: #FF0000;
-  transition: ease-in .3s;
+    background: #FF0000;
+    transition: ease-in .3s;
 }
 .btn-primary:hover{
     background: #883838;
@@ -80,7 +80,7 @@
     box-shadow: 6px 6px 50px 6px rgba(0, 0, 0, 0.7);
 }
 .card-img{
-   
+    
     height: 400px;
 }
 .card img{
@@ -115,12 +115,12 @@
     .list-film{
         padding: 0px;
     }
-  
+    
 }
 
 @media(min-width:992px){
     .input{
         padding-left: 15rem;
         padding-right: 15rem;
-     }
+    }
 }

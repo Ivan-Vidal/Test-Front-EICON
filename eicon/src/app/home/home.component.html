@@ -1,59 +1,59 @@
 <div class="container">
-    <div class="topo">
-        <img class="logo" src="../../assets/img/cinema.svg" alt="">
+  <div class="topo">
+    <img class="logo" src="../../assets/img/cinema.svg" alt="">
     <h1 class="titulo"><img src="http://www.eicon.com.br/images/logo_eicon.png" alt=""> <br><i>MOVIES</i></h1></div>
-<div class="input">
-        <div class="input-group mb-3">
-            <input type="text" [formControl]="queryField" class="form-control" placeholder="Encontre o filme pelo nome">
-            <div class="input-group-append">
-              <button (click)=" onSearch()" class="btn" type="button" >
-                  <img src="../../assets/img/lupa.svg" class="lupa" alt="Buscar">
-                 </button>
-            </div>
-          </div>
-        </div>
-        <div [hidden]="show">
-        <hr class="risco">
-        <div class="rotolo">
-          <p>{{total}} resultados encontrados </p>
-        </div>
-      <div class="catalogo">
-          <ul class="list-film row" >
-              <div class="film" *ngFor="let result of results$ | async">
-                  <li> 
-                      <div class="card">
-                          <div class="card-img">
-                      <img src="https://image.tmdb.org/t/p/original/{{result.poster_path}}" class="card-img-top" alt="{{result.title}}">
-                  </div>
-                      <div class="card-body">
-                        <h5 class="card-title">{{result.title}}</h5>
-                        <a  (click)="onEdit(result.id)" class="btn btn-primary"> Detalhes</a>
-                      </div>
-                    </div>
-                  </li>
-              </div>
-          </ul>
+    <div class="input">
+      <div class="input-group mb-3">
+        <input type="text" [formControl]="queryField" class="form-control" placeholder="Encontre o filme pelo nome">
+        <div class="input-group-append">
+          <button (click)=" onSearch()" class="btn" type="button" >
+            <img src="../../assets/img/lupa.svg" class="lupa" alt="Buscar">
+          </button>
         </div>
       </div>
-        <hr class="risco">
-          <div class="rotolo">
-            <p>Os Mais populares</p>
-          </div>
-        <div class="catalogo">
-            <ul class="list-film row" >
-                <div class="film" *ngFor="let movie of movies">
-                    <li> 
-                        <div class="card">
-                            <div class="card-img">
-                        <img src="https://image.tmdb.org/t/p/original/{{movie.poster_path}}" class="card-img-top" alt="{{movie.title}}">
-                    </div>
-                        <div class="card-body">
-                          <h5 class="card-title">{{movie.title}}</h5>
-                          <a  (click)="onEdit(movie.id)" class="btn btn-primary"> Detalhes</a>
-                        </div>
-                      </div>
-                    </li>
+    </div>
+    <div [hidden]="show">
+      <hr class="risco">
+      <div class="rotolo">
+        <p>{{total}} resultados encontrados </p>
+      </div>
+      <div class="catalogo">
+        <ul class="list-film row" >
+          <div class="film" *ngFor="let result of results$ | async">
+            <li> 
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://image.tmdb.org/t/p/original/{{result.poster_path}}" class="card-img-top" alt="{{result.title}}">
                 </div>
-            </ul>
+                <div class="card-body">
+                  <h5 class="card-title">{{result.title}}</h5>
+                  <a  (click)="onEdit(result.id)" class="btn btn-primary"> Detalhes</a>
+                </div>
+              </div>
+            </li>
           </div>
-</div>
+        </ul>
+      </div>
+    </div>
+    <hr class="risco">
+    <div class="rotolo">
+      <p>Os Mais populares</p>
+    </div>
+    <div class="catalogo">
+      <ul class="list-film row" >
+        <div class="film" *ngFor="let movie of movies">
+          <li> 
+            <div class="card">
+              <div class="card-img">
+                <img src="https://image.tmdb.org/t/p/original/{{movie.poster_path}}" class="card-img-top" alt="{{movie.title}}">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{movie.title}}</h5>
+                <a  (click)="onEdit(movie.id)" class="btn btn-primary"> Detalhes</a>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
